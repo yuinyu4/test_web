@@ -363,8 +363,8 @@
   },
   "admin": {
     "github": {
-      "owner": "",
-      "repo": "",
+      "owner": "yuinyu4",
+      "repo": "test_web",
       "branch": "main",
       "contentPath": "data/site-content.json",
       "galleryDir": "assets/gallery"
