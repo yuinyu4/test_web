@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="리멤넌트 동아리 소개 사이트. 창작, 개발, 전시 활동을 실제 서비스 수준의 인터랙션으로 소개합니다.">
+  <meta property="og:title" content="remnant @ DKSH">
+  <meta property="og:description" content="조각을 모아, 다음 장면을 만든다.">
+  <meta property="og:type" content="website">
+  <title>remnant @ DKSH</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header" id="siteHeader">
+      <div class="container nav-row">
+        <button class="brand-button" data-nav-target="home" aria-label="홈으로 이동">
+          <span class="brand-mark">
+            <img src="assets/logo.png" alt="remnant 로고">
+          </span>
+          <span class="brand-copy">
+            <strong>remnant</strong>
+            <span>DKSH Creative Tech Club</span>
+          </span>
+        </button>
+
+        <nav class="desktop-nav" aria-label="주요 메뉴">
+          <button class="nav-link" data-nav-target="home">Home</button>
+          <button class="nav-link" data-nav-target="about">About</button>
+          <button class="nav-link" data-nav-target="projects">Projects</button>
+          <button class="nav-link" data-nav-target="members">Members</button>
+          <button class="nav-link" data-nav-target="gallery">Gallery</button>
+          <button class="nav-link" data-nav-target="history">History</button>
+          <button class="nav-link" data-nav-target="notices">Notice</button>
+          <button class="nav-link" data-nav-target="contact">Contact</button>
+        </nav>
+
+        <div class="nav-actions">
+          <button class="admin-entry" id="adminEntry">Admin</button>
+          <button class="mobile-menu-button" id="mobileMenuButton" aria-expanded="false" aria-controls="mobileNav">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+
+      <nav class="mobile-nav" id="mobileNav" aria-label="모바일 메뉴">
+        <button class="nav-link" data-nav-target="home">Home</button>
+        <button class="nav-link" data-nav-target="about">About</button>
+        <button class="nav-link" data-nav-target="projects">Projects</button>
+        <button class="nav-link" data-nav-target="members">Members</button>
+        <button class="nav-link" data-nav-target="gallery">Gallery</button>
+        <button class="nav-link" data-nav-target="history">History</button>
+        <button class="nav-link" data-nav-target="notices">Notice</button>
+        <button class="nav-link" data-nav-target="contact">Contact</button>
+        <button class="nav-link nav-link-admin" id="mobileAdminEntry">Admin</button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section-anchor" id="home" data-route="home">
+        <div class="hero-backdrop" aria-hidden="true">
+          <div class="hero-orb hero-orb-a"></div>
+          <div class="hero-orb hero-orb-b"></div>
+          <div class="hero-grid"></div>
+        </div>
+
+        <div class="container hero-layout">
+          <div class="hero-copy">
+            <div class="eyebrow reveal">Creative Tech Club</div>
+            <h1 class="hero-title reveal" id="heroTitle"></h1>
+            <p class="hero-subtitle reveal" id="heroSubtitle"></p>
+
+            <div class="hero-actions reveal">
+              <button class="button button-primary" data-nav-target="projects">프로젝트 보기</button>
+              <button class="button button-secondary" data-nav-target="about">동아리 소개</button>
+            </div>
+
+            <div class="hero-stats reveal" id="heroStats"></div>
+          </div>
+
+          <div class="hero-panel reveal">
+            <div class="hero-panel-top">
+              <span class="status-pill">Live identity</span>
+              <span class="status-note">학생 작업물을 서비스처럼 다듬는 팀</span>
+            </div>
+
+            <div class="hero-feature-card">
+              <div class="hero-feature-head">
+                <span class="hero-feature-label">Core Focus</span>
+                <strong>Design + Build + Story</strong>
+              </div>
+              <p id="heroCardText"></p>
+            </div>
+
+            <div class="hero-signal-list" id="heroSignals"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-anchor" id="about" data-route="about">
+        <div class="container">
+          <div class="section-head reveal">
+            <span class="eyebrow">About</span>
+            <h2 class="section-title">깔끔함을 넘어서, 기억에 남는 팀으로.</h2>
+            <p class="section-body" id="aboutIntro"></p>
+          </div>
+
+          <div class="about-layout">
+            <div class="about-principles reveal" id="principlesGrid"></div>
+            <div class="about-showcase reveal">
+              <div class="showcase-card showcase-dark">
+                <span>Message</span>
+                <strong id="aboutHeadline"></strong>
+              </div>
+              <div class="showcase-card showcase-light">
+                <span>System</span>
+                <strong>명확한 계층, 절제된 컬러, 선명한 인터랙션.</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-contrast section-anchor" id="projects" data-route="projects">
+        <div class="container">
+          <div class="section-head reveal">
+            <span class="eyebrow">Projects</span>
+            <h2 class="section-title light">같은 카드 반복 대신, 이야기 흐름으로 보여줍니다.</h2>
+            <p class="section-body light">프로젝트는 카드 그리드가 아니라 에디토리얼 리스트로 구성해 시각적 리듬을 바꿨습니다.</p>
+          </div>
+
+          <div class="project-list" id="projectList"></div>
+        </div>
+      </section>
+
+      <section class="section section-anchor" id="members" data-route="members">
+        <div class="container">
+          <div class="section-head reveal">
+            <span class="eyebrow">Members</span>
+            <h2 class="section-title">사람이 보이는 팀 소개.</h2>
+            <p class="section-body">부원 섹션은 단순 카드 복제 대신 역할 중심의 라인업으로 재구성했습니다.</p>
+          </div>
+
+          <div class="member-stack" id="memberStack"></div>
+        </div>
+      </section>
+
+      <section class="section section-anchor" id="gallery" data-route="gallery">
+        <div class="container">
+          <div class="gallery-head">
+            <div class="section-head reveal">
+              <span class="eyebrow">Gallery</span>
+              <h2 class="section-title">활동 장면은 밀도 있게, 정보는 가볍게.</h2>
+              <p class="section-body">필터와 모달을 통해 사진을 실제 서비스처럼 탐색할 수 있습니다.</p>
+            </div>
+            <div class="filter-group reveal" id="galleryFilters"></div>
+          </div>
+
+          <div class="masonry-grid" id="galleryGrid"></div>
+        </div>
+      </section>
+
+      <section class="section section-muted section-anchor" id="history" data-route="history">
+        <div class="container history-layout">
+          <div>
+            <div class="section-head reveal">
+              <span class="eyebrow">History</span>
+              <h2 class="section-title">시간축 위에 쌓인 결과.</h2>
+              <p class="section-body">연혁과 성과는 서로 다른 정보 밀도로 나누어 읽히게 했습니다.</p>
+            </div>
+            <div class="timeline-list" id="timelineList"></div>
+          </div>
+
+          <div>
+            <div class="section-head reveal">
+              <span class="eyebrow">Achievements</span>
+              <h2 class="section-title">팀의 신뢰를 만드는 기록.</h2>
+            </div>
+            <div class="achievement-grid" id="achievementGrid"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-anchor" id="notices" data-route="notices">
+        <div class="container">
+          <div class="section-head reveal">
+            <span class="eyebrow">Notice</span>
+            <h2 class="section-title">최근 공지와 다음 액션.</h2>
+            <p class="section-body">사용자가 지금 확인해야 할 정보부터 먼저 보이도록 정렬합니다.</p>
+          </div>
+
+          <div class="notice-list" id="noticeList"></div>
+        </div>
+      </section>
+
+      <section class="section contact-section section-anchor" id="contact" data-route="contact">
+        <div class="container contact-layout">
+          <div class="contact-copy reveal">
+            <span class="eyebrow">Contact</span>
+            <h2 class="section-title">연결은 바로 되고, 수정은 관리자에서 끝납니다.</h2>
+            <p class="section-body" id="contactDescription"></p>
+          </div>
+
+          <div class="contact-panel reveal">
+            <div class="contact-links" id="contactLinks"></div>
+
+            <div class="contact-cta">
+              <span>관리자 바로가기</span>
+              <button class="button button-primary" id="contactAdminButton">콘텐츠 수정하기</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-layout">
+        <div>
+          <div class="footer-brand">
+            <span class="brand-mark">
+              <img src="assets/logo.png" alt="remnant 로고">
+            </span>
+            <div>
+              <strong>remnant</strong>
+              <span id="footerSchool"></span>
+            </div>
+          </div>
+          <p id="footerSummary"></p>
+        </div>
+
+        <div class="footer-links">
+          <span class="footer-label">Pages</span>
+          <button data-nav-target="home">Home</button>
+          <button data-nav-target="projects">Projects</button>
+          <button data-nav-target="gallery">Gallery</button>
+          <button data-nav-target="contact">Contact</button>
+        </div>
+
+        <div class="footer-links">
+          <span class="footer-label">Access</span>
+          <button id="footerAdminButton">Admin Login</button>
+          <button id="footerShortcutHint">Ctrl + Shift + A</button>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <div class="modal-shell" id="loginModal" aria-hidden="true">
+    <div class="modal-card">
+      <div class="modal-head">
+        <div>
+          <span class="eyebrow">Admin</span>
+          <h3>관리자 로그인</h3>
+        </div>
+        <button class="icon-button" data-close-modal="loginModal" aria-label="닫기">×</button>
+      </div>
+      <p class="modal-body">상단 버튼 또는 단축키로 접근할 수 있습니다. 비밀번호를 입력하면 관리자 패널이 열립니다.</p>
+      <label class="field-label" for="adminPassword">Password</label>
+      <input class="field-input" id="adminPassword" type="password" placeholder="비밀번호 입력">
+      <p class="form-error" id="loginError"></p>
+      <div class="modal-actions">
+        <button class="button button-secondary" data-close-modal="loginModal">취소</button>
+        <button class="button button-primary" id="loginSubmit">로그인</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-shell" id="galleryModal" aria-hidden="true">
+    <div class="modal-card modal-gallery-card">
+      <button class="icon-button modal-gallery-close" data-close-modal="galleryModal" aria-label="닫기">×</button>
+      <div class="gallery-modal-media" id="galleryModalMedia"></div>
+      <div class="gallery-modal-body">
+        <span class="gallery-modal-tag" id="galleryModalTag"></span>
+        <h3 id="galleryModalTitle"></h3>
+        <p id="galleryModalDescription"></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="admin-shell" id="adminShell" aria-hidden="true">
+    <div class="admin-backdrop"></div>
+    <div class="admin-panel">
+      <aside class="admin-sidebar">
+        <div class="admin-brand">
+          <span class="brand-mark">
+            <img src="assets/logo.png" alt="remnant 로고">
+          </span>
+          <div>
+            <strong>Admin Panel</strong>
+            <span>실시간 콘텐츠 관리</span>
+          </div>
+        </div>
+
+        <div class="admin-tabs" id="adminTabs"></div>
+
+        <div class="admin-sidebar-actions">
+          <button class="button button-secondary button-block" id="logoutButton">로그아웃</button>
+          <button class="button button-primary button-block" id="exportButton">데이터 내보내기</button>
+        </div>
+      </aside>
+
+      <section class="admin-main">
+        <div class="admin-main-head">
+          <div>
+            <span class="eyebrow">Dashboard</span>
+            <h3 id="adminPanelTitle">콘텐츠 관리</h3>
+          </div>
+          <button class="icon-button" id="adminCloseButton" aria-label="관리자 닫기">×</button>
+        </div>
+
+        <div class="admin-main-body" id="adminPanelBody"></div>
+      </section>
+    </div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
