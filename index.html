@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="단국대학교부속소프트웨어고등학교(DKSH) 램넌트 연구개발동아리">
+  <meta property="og:title" content="램넌트 | DKSH">
+  <meta property="og:description" content="단국대학교부속소프트웨어고등학교(DKSH) 램넌트 연구개발동아리">
+  <meta property="og:type" content="website">
+  <title>램넌트 | DKSH</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="site-root">
+    <header class="site-header" id="siteHeader">
+      <div class="container header-inner">
+        <a class="brand-link" href="#home" data-scroll-target="home" aria-label="램넌트 연구개발동아리 홈">
+          <span class="brand-mark">
+            <img src="assets/logo.png" alt="램넌트 로고">
+          </span>
+          <span class="brand-copy">
+            <strong id="brandNameHeader">램넌트 연구개발동아리</strong>
+            <span id="brandMetaHeader">단국대학교부속소프트웨어고등학교 · DKSH</span>
+          </span>
+        </a>
+
+        <nav class="site-nav" aria-label="주요 메뉴">
+          <a href="#about" data-scroll-target="about">소개</a>
+          <a href="#departments" data-scroll-target="departments">부서</a>
+          <a href="#projects" data-scroll-target="projects">프로젝트</a>
+          <a href="#team" data-scroll-target="team">부원</a>
+          <a href="#gallery" data-scroll-target="gallery">갤러리</a>
+          <a href="#history" data-scroll-target="history">기록</a>
+          <a href="#notices" data-scroll-target="notices">공지</a>
+          <a href="#contact" data-scroll-target="contact">연결</a>
+        </nav>
+
+        <button class="menu-button" id="menuButton" aria-controls="mobileNav" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+      <nav class="mobile-nav" id="mobileNav" aria-label="모바일 메뉴">
+        <a href="#about" data-scroll-target="about">소개</a>
+        <a href="#departments" data-scroll-target="departments">부서</a>
+        <a href="#projects" data-scroll-target="projects">프로젝트</a>
+        <a href="#team" data-scroll-target="team">부원</a>
+        <a href="#gallery" data-scroll-target="gallery">갤러리</a>
+        <a href="#history" data-scroll-target="history">기록</a>
+        <a href="#notices" data-scroll-target="notices">공지</a>
+        <a href="#contact" data-scroll-target="contact">연결</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section-anchor" id="home">
+        <div class="hero-grid" aria-hidden="true"></div>
+        <div class="container hero-inner">
+          <div class="hero-main">
+            <p class="section-kicker" id="heroEyebrow"></p>
+            <h1 class="hero-title" id="heroTitle"></h1>
+            <p class="hero-body" id="heroBody"></p>
+
+            <div class="hero-actions">
+              <a class="button button-primary" href="#projects" data-scroll-target="projects" id="heroPrimaryAction"></a>
+              <a class="button button-secondary" href="#departments" data-scroll-target="departments" id="heroSecondaryAction"></a>
+            </div>
+
+            <div class="hero-stats" id="heroStats"></div>
+          </div>
+
+          <aside class="hero-aside">
+            <div class="hero-aside-card">
+              <p class="card-label" id="heroIdentityLabel">동아리 정보</p>
+              <div class="identity-list" id="heroIdentity"></div>
+            </div>
+
+            <div class="hero-aside-card">
+              <p class="card-label" id="heroLatestLabel">최근 안내</p>
+              <div class="hero-latest" id="heroLatestNotice"></div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section intro-section section-anchor" id="about">
+        <div class="container">
+          <div class="section-head">
+            <p class="section-kicker" id="introEyebrow"></p>
+            <h2 class="section-title" id="introTitle"></h2>
+            <p class="section-body" id="introBody"></p>
+          </div>
+
+          <div class="intro-layout">
+            <div class="principle-list" id="introPrinciples"></div>
+            <div class="intro-side-card">
+              <p class="card-label" id="introSideLabel"></p>
+              <h3 id="introSideTitle"></h3>
+              <p id="introSideBody"></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section department-section section-anchor" id="departments">
+        <div class="container">
+          <div class="section-head">
+            <p class="section-kicker" id="departmentEyebrow"></p>
+            <h2 class="section-title" id="departmentTitle"></h2>
+            <p class="section-body" id="departmentBody"></p>
+          </div>
+
+          <div class="department-list" id="departmentList"></div>
+        </div>
+      </section>
+
+      <section class="section project-section section-anchor" id="projects">
+        <div class="container">
+          <div class="section-head section-head-light">
+            <p class="section-kicker" id="projectEyebrow"></p>
+            <h2 class="section-title" id="projectTitle"></h2>
+            <p class="section-body" id="projectBody"></p>
+          </div>
+
+          <div class="project-list" id="projectList"></div>
+        </div>
+      </section>
+
+      <section class="section team-section section-anchor" id="team">
+        <div class="container">
+          <div class="section-head">
+            <p class="section-kicker" id="teamEyebrow"></p>
+            <h2 class="section-title" id="teamTitle"></h2>
+            <p class="section-body" id="teamBody"></p>
+          </div>
+
+          <div class="team-list" id="teamList"></div>
+        </div>
+      </section>
+
+      <section class="section gallery-section section-anchor" id="gallery">
+        <div class="container">
+          <div class="gallery-head">
+            <div class="section-head">
+              <p class="section-kicker" id="galleryEyebrow"></p>
+              <h2 class="section-title" id="galleryTitle"></h2>
+              <p class="section-body" id="galleryBody"></p>
+            </div>
+          </div>
+
+          <div class="gallery-spotlight">
+            <div class="gallery-subhead">
+              <p class="gallery-subtitle">랜덤 갤러리</p>
+              <p class="gallery-subcopy">기본 화면에서는 장면 세 개만 먼저 보여줍니다.</p>
+            </div>
+            <div class="gallery-spotlight-grid" id="gallerySpotlightGrid"></div>
+          </div>
+
+          <div class="gallery-browser">
+            <div class="gallery-browser-head">
+              <div>
+                <p class="gallery-subtitle">프로젝트별 전체 갤러리</p>
+                <p class="gallery-subcopy" id="galleryProjectSummary"></p>
+              </div>
+              <div class="gallery-filters" id="galleryFilters"></div>
+            </div>
+            <div class="gallery-grid gallery-grid-project" id="galleryGrid"></div>
+            <div class="gallery-more" id="galleryMore"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section record-section section-anchor" id="history">
+        <div class="container record-layout">
+          <div>
+            <div class="section-head">
+              <p class="section-kicker" id="historyEyebrow"></p>
+              <h2 class="section-title" id="historyTitle"></h2>
+              <p class="section-body" id="historyBody"></p>
+            </div>
+
+            <div class="timeline-list" id="timelineList"></div>
+          </div>
+
+          <div>
+            <div class="section-head compact-head">
+              <p class="section-kicker" id="achievementEyebrow"></p>
+              <h2 class="section-title compact-title" id="achievementTitle"></h2>
+              <p class="section-body" id="achievementBody"></p>
+            </div>
+
+            <div class="achievement-list" id="achievementList"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section notice-section section-anchor" id="notices">
+        <div class="container">
+          <div class="section-head">
+            <p class="section-kicker" id="noticeEyebrow"></p>
+            <h2 class="section-title" id="noticeTitle"></h2>
+            <p class="section-body" id="noticeBody"></p>
+          </div>
+
+          <div class="notice-list" id="noticeList"></div>
+        </div>
+      </section>
+
+      <section class="section contact-section section-anchor" id="contact">
+        <div class="container contact-layout">
+          <div class="section-head">
+            <p class="section-kicker" id="contactEyebrow"></p>
+            <h2 class="section-title" id="contactTitle"></h2>
+            <p class="section-body" id="contactBody"></p>
+          </div>
+
+          <div class="contact-cards" id="contactCards"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <span class="brand-mark">
+            <img src="assets/logo.png" alt="램넌트 로고">
+          </span>
+          <div>
+            <strong id="footerBrandTitle">램넌트 연구개발동아리</strong>
+            <p id="footerNote"></p>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <p class="footer-label" id="footerPagesLabel"></p>
+          <div class="footer-links" id="footerPageLinks"></div>
+        </div>
+
+        <div class="footer-column">
+          <p class="footer-label" id="footerConnectLabel"></p>
+          <div class="footer-links" id="footerConnectLinks"></div>
+        </div>
+
+        <div class="footer-column footer-access">
+          <p class="footer-label" id="footerAccessLabel"></p>
+          <button class="footer-admin-link" id="adminEntryButton">관리</button>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <div class="modal-shell" id="loginModal" aria-hidden="true">
+    <div class="modal-panel">
+      <div class="modal-head">
+        <div>
+          <p class="section-kicker">관리자</p>
+          <h3>운영 화면에 들어갑니다.</h3>
+        </div>
+        <button class="modal-close" data-close-modal="loginModal" aria-label="닫기">×</button>
+      </div>
+
+      <p class="modal-copy">사이트 운영용 화면입니다. 비밀번호를 입력하면 콘텐츠와 갤러리 항목을 수정할 수 있습니다.</p>
+      <label class="field-label" for="adminPassword">비밀번호</label>
+      <input class="field-input" id="adminPassword" type="password" placeholder="비밀번호 입력">
+      <p class="form-feedback" id="loginFeedback"></p>
+
+      <div class="modal-actions">
+        <button class="button button-secondary" data-close-modal="loginModal">취소</button>
+        <button class="button button-primary" id="loginSubmitButton">들어가기</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-shell" id="galleryModal" aria-hidden="true">
+    <div class="gallery-modal-panel">
+      <button class="modal-close gallery-modal-close" data-close-modal="galleryModal" aria-label="닫기">×</button>
+      <div class="gallery-modal-image" id="galleryModalImage"></div>
+      <div class="gallery-modal-copy">
+        <p class="section-kicker" id="galleryModalCategory"></p>
+        <h3 id="galleryModalTitle"></h3>
+        <p id="galleryModalBody"></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="admin-shell" id="adminShell" aria-hidden="true">
+    <div class="admin-backdrop"></div>
+    <div class="admin-window">
+      <aside class="admin-sidebar">
+        <div class="admin-sidebar-head">
+          <span class="brand-mark">
+            <img src="assets/logo.png" alt="램넌트 로고">
+          </span>
+          <div>
+            <strong id="adminBrandTitle">램넌트 운영 화면</strong>
+            <p>사이트와 활동 기록을 한곳에서 관리합니다.</p>
+          </div>
+        </div>
+
+        <nav class="admin-tabs" id="adminTabs"></nav>
+
+        <div class="admin-sidebar-actions">
+          <button class="button button-secondary button-block" id="adminCloseButton">닫기</button>
+        </div>
+      </aside>
+
+      <section class="admin-content">
+        <div class="admin-toolbar">
+          <div>
+            <p class="section-kicker">관리 화면</p>
+            <h3 id="adminPanelTitle"></h3>
+          </div>
+
+          <div class="admin-toolbar-actions">
+            <p class="admin-status" id="adminStatus"></p>
+            <button class="button button-secondary" id="restorePublishedButton">게시본 다시 불러오기</button>
+          </div>
+        </div>
+
+        <div class="admin-scroll" id="adminPanelContent"></div>
+      </section>
+    </div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

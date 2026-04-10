@@ -1,0 +1,373 @@
+{
+  "site": {
+    "brandName": "램넌트",
+    "teamName": "램넌트 연구개발동아리",
+    "schoolName": "단국대학교부속소프트웨어고등학교",
+    "schoolShort": "DKSH",
+    "metaDescription": "단국대학교부속소프트웨어고등학교(DKSH) 램넌트 연구개발동아리",
+    "identityLabel": "동아리 정보",
+    "noticeLabel": "최근 안내",
+    "footerNote": "아이디어를 말로만 두지 않고, 직접 만들고 시험하고 발표합니다."
+  },
+  "hero": {
+    "eyebrow": "DKSH 램넌트 연구개발동아리",
+    "title": "기획한 것을 실제로 구현해봅니다.",
+    "body": "램넌트 연구개발동아리는 단국대학교부속소프트웨어고등학교에서 아이디어를 기획하고, 만들고, 테스트하고, 발표까지 이어 가는 학생 동아리입니다.",
+    "primaryLabel": "최근 작업 보기",
+    "primaryTarget": "projects",
+    "secondaryLabel": "부서 보기",
+    "secondaryTarget": "departments"
+  },
+  "stats": [
+    {
+      "value": "",
+      "suffix": "명",
+      "label": "함께하는 인원"
+    },
+    {
+      "value": "",
+      "suffix": "건",
+      "label": "진행한 프로젝트"
+    },
+    {
+      "value": "",
+      "suffix": "건",
+      "label": "최근 공지"
+    }
+  ],
+  "intro": {
+    "eyebrow": "소개",
+    "title": "아이디어를 연구하고 직접 만들어봅니다.",
+    "body": "회의에서 나온 생각을 자료 조사로만 끝내지 않고, 시안과 프로토타입, 발표 자료, 실제 구현까지 이어 가며 동아리 안에서 함께 다뤄봅니다.",
+    "sideLabel": "운영 방식",
+    "sideTitle": "부서별로 만들고, 함께 점검합니다.",
+    "sideBody": "게임부, 웹앱부, 하드웨어부가 각자 맡은 주제를 진행하고 필요한 순간 같이 피드백합니다. 결과물은 기록으로 남겨 다음 작업의 출발점으로 삼습니다.",
+    "principles": [
+      {
+        "title": "직접 구현합니다",
+        "body": "기획에서 끝내지 않고 화면, 코드, 회로, 플레이 테스트까지 손으로 옮겨 봅니다."
+      },
+      {
+        "title": "과정을 남깁니다",
+        "body": "수정 기록과 발표 자료를 함께 정리해 다음 작업에 이어질 수 있게 남깁니다."
+      },
+      {
+        "title": "현실적으로 다룹니다",
+        "body": "멋있어 보이는 말보다 지금 가능한 범위와 실제 결과를 더 또렷하게 적습니다."
+      }
+    ]
+  },
+  "departments": {
+    "eyebrow": "부서",
+    "title": "세 개의 부서로 움직입니다.",
+    "body": "게임부, 웹앱부, 하드웨어부가 각자 다른 방식으로 만들고 실험합니다. 필요한 순간에는 서로의 작업을 함께 검토합니다.",
+    "items": [
+      {
+        "id": "game",
+        "name": "게임부",
+        "summary": "기획한 규칙이 실제 플레이로 이어지는지 확인하는 부서입니다.",
+        "description": "게임의 콘셉트, 플레이 방식, 밸런스, 테스트 흐름을 함께 다룹니다. 짧은 프로토타입을 빠르게 만들고 직접 플레이하면서 수정합니다.",
+        "activity": "프로토타입 제작 · 플레이 테스트 · 기획 보드 정리"
+      },
+      {
+        "id": "webapp",
+        "name": "웹앱부",
+        "summary": "아이디어를 웹 화면과 서비스 흐름으로 구현하는 부서입니다.",
+        "description": "정보 구조, 화면 설계, 프론트엔드 구현, 간단한 관리자 기능까지 맡아 실제로 동작하는 결과물을 만드는 데 집중합니다.",
+        "activity": "서비스 시안 · 웹 구현 · 관리자 화면 정리"
+      },
+      {
+        "id": "hardware",
+        "name": "하드웨어부",
+        "summary": "센서와 부품을 직접 다루며 동작을 확인하는 부서입니다.",
+        "description": "아두이노와 각종 부품을 이용해 아이디어를 물리적인 결과물로 옮깁니다. 회로 연결과 테스트 과정을 반복하며 안정성을 확인합니다.",
+        "activity": "회로 구성 · 센서 테스트 · 동작 시연"
+      }
+    ]
+  },
+  "projects": {
+    "eyebrow": "프로젝트",
+    "title": "최근에 다룬 작업",
+    "body": "어떤 아이디어를 어떤 방식으로 만들고 있는지 짧고 분명하게 정리했습니다.",
+    "items": [
+      {
+        "id": "project-pitch-board",
+        "year": "2026",
+        "status": "진행 중",
+        "title": "아이디어 피치 보드",
+        "summary": "팀별 아이디어를 한 장으로 정리해 발표와 피드백에 쓰는 보드 작업입니다.",
+        "detail": "문제 정의, 해결 방식, 예상 사용자, 발표 흐름이 한눈에 읽히도록 다듬고 있습니다."
+      },
+      {
+        "id": "project-school-service",
+        "year": "2025",
+        "status": "완료",
+        "title": "학교생활 서비스 시안",
+        "summary": "학교 안에서 불편한 흐름을 바탕으로 웹 서비스 화면과 사용 흐름을 정리한 프로젝트입니다.",
+        "detail": "아이디어 검토 후 화면 시안, 구현, 발표 자료까지 한 흐름으로 묶어 진행했습니다."
+      },
+      {
+        "id": "project-device-lab",
+        "year": "2025",
+        "status": "완료",
+        "title": "센서 실험 키트",
+        "summary": "하드웨어부에서 센서와 부품을 연결해 간단한 동작을 시험한 실험 프로젝트입니다.",
+        "detail": "회로 연결, 부품 선택, 반복 테스트를 통해 실제 시연 가능한 결과를 만드는 데 집중했습니다."
+      }
+    ]
+  },
+  "team": {
+    "eyebrow": "부원",
+    "title": "함께 연구하고 만드는 부원들",
+    "body": "각자 맡은 역할과 소속 부서를 함께 보여 주어, 동아리가 어떻게 움직이는지 한눈에 읽히도록 했습니다.",
+    "items": [
+      {
+        "id": "member-1",
+        "name": "김도윤",
+        "role": "기획",
+        "grade": "3학년",
+        "department": "game",
+        "summary": "게임부에서 아이디어 방향을 잡고 발표 흐름과 기획 보드를 정리합니다."
+      },
+      {
+        "id": "member-2",
+        "name": "이서현",
+        "role": "프론트엔드",
+        "grade": "3학년",
+        "department": "webapp",
+        "summary": "웹앱부에서 화면과 관리자 기능을 구현하고 동작을 점검합니다."
+      },
+      {
+        "id": "member-3",
+        "name": "박민재",
+        "role": "디자인",
+        "grade": "2학년",
+        "department": "webapp",
+        "summary": "웹 시안과 발표 자료 비주얼을 맡아 화면 분위기를 정리합니다."
+      },
+      {
+        "id": "member-4",
+        "name": "최하린",
+        "role": "콘텐츠 정리",
+        "grade": "2학년",
+        "department": "game",
+        "summary": "기획 설명, 공지, 발표용 문장을 다듬고 기록을 정리합니다."
+      },
+      {
+        "id": "member-5",
+        "name": "정현우",
+        "role": "하드웨어 제작",
+        "grade": "2학년",
+        "department": "hardware",
+        "summary": "센서와 부품을 연결하고 동작 테스트를 반복하며 시연용 결과를 만듭니다."
+      },
+      {
+        "id": "member-6",
+        "name": "윤지호",
+        "role": "테스트",
+        "grade": "1학년",
+        "department": "game",
+        "summary": "플레이 테스트와 피드백 정리를 맡아 규칙과 난이도를 함께 점검합니다."
+      }
+    ]
+  },
+  "gallery": {
+    "eyebrow": "갤러리",
+    "title": "활동 장면과 작업 기록",
+    "body": "회의, 제작, 테스트, 발표 준비처럼 동아리의 실제 움직임을 남기는 공간입니다.",
+    "items": [
+      {
+        "id": "gallery-1",
+        "title": "아이디어 회의",
+        "caption": "주제를 정하고 역할을 나누기 전, 방향을 같이 맞추는 시간입니다.",
+        "category": "team",
+        "projectId": "project-pitch-board",
+        "imageUrl": "",
+        "assetPath": "",
+        "featured": false
+      },
+      {
+        "id": "gallery-2",
+        "title": "시안 점검",
+        "caption": "화면 구성과 문장을 같이 보면서 수정 포인트를 정리합니다.",
+        "category": "work",
+        "projectId": "project-school-service",
+        "imageUrl": "",
+        "assetPath": "",
+        "featured": true
+      },
+      {
+        "id": "gallery-3",
+        "title": "중간 발표 준비",
+        "caption": "발표 순서와 자료 흐름을 마지막으로 확인하는 장면입니다.",
+        "category": "showcase",
+        "projectId": "project-pitch-board",
+        "imageUrl": "",
+        "assetPath": "",
+        "featured": false
+      },
+      {
+        "id": "gallery-4",
+        "title": "센서 테스트",
+        "caption": "하드웨어부에서 부품 연결과 동작을 직접 확인하던 장면입니다.",
+        "category": "work",
+        "projectId": "project-device-lab",
+        "imageUrl": "",
+        "assetPath": "",
+        "featured": true
+      }
+    ]
+  },
+  "history": {
+    "eyebrow": "기록",
+    "title": "동아리의 흐름",
+    "body": "무엇을 시작했고 어떻게 쌓였는지만 간단히 읽을 수 있게 정리했습니다.",
+    "items": [
+      {
+        "id": "history-1",
+        "year": "2023",
+        "title": "동아리 시작",
+        "description": "아이디어를 실제 작업으로 옮겨 보는 팀으로 첫 활동을 시작했습니다."
+      },
+      {
+        "id": "history-2",
+        "year": "2024",
+        "title": "첫 교내 발표 진행",
+        "description": "팀별 결과를 정리해 학교 안에서 직접 발표하고 피드백을 받았습니다."
+      },
+      {
+        "id": "history-3",
+        "year": "2026",
+        "title": "사이트와 기록 체계 정비",
+        "description": "카피, 구조, 관리자 흐름을 다시 손봐 운영 가능한 형태로 정리했습니다."
+      }
+    ]
+  },
+  "achievements": {
+    "eyebrow": "성과",
+    "title": "쌓아 온 결과",
+    "body": "대단해 보이기보다 실제로 해낸 일 중심으로 남겼습니다.",
+    "items": [
+      {
+        "id": "achievement-1",
+        "title": "교내 발표 운영",
+        "description": "아이디어와 결과를 학교 안에서 직접 설명하고 공유했습니다.",
+        "year": "2025"
+      },
+      {
+        "id": "achievement-2",
+        "title": "서비스 시안 제작",
+        "description": "문제 정의부터 화면 시안, 발표 자료까지 한 흐름으로 정리했습니다.",
+        "year": "2025"
+      },
+      {
+        "id": "achievement-3",
+        "title": "활동 기록 체계 정리",
+        "description": "사이트와 갤러리를 통해 작업과 공지를 꾸준히 남길 수 있게 했습니다.",
+        "year": "2026"
+      }
+    ]
+  },
+  "notices": {
+    "eyebrow": "공지",
+    "title": "최근 안내",
+    "body": "필요한 내용만 빠르게 확인할 수 있게 정리했습니다.",
+    "items": [
+      {
+        "id": "notice-1",
+        "date": "2026.04.20",
+        "tag": "안내",
+        "title": "상반기 프로젝트 점검",
+        "summary": "팀별 진행 상황을 공유하고 다음 수정 항목을 정리합니다."
+      },
+      {
+        "id": "notice-2",
+        "date": "2026.04.12",
+        "tag": "모집",
+        "title": "신입 멤버 오리엔테이션",
+        "summary": "동아리 운영 방식과 기본 작업 흐름을 함께 안내합니다."
+      },
+      {
+        "id": "notice-3",
+        "date": "2026.04.01",
+        "tag": "업데이트",
+        "title": "사이트 정비 완료",
+        "summary": "카피, 섹션 구조, 관리자 흐름을 다시 손봤습니다."
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "연결",
+    "title": "필요한 정보만 남겼습니다.",
+    "body": "학교 홈페이지, 대표 연락처, 운영 계정처럼 실제로 쓰는 연결만 둡니다.",
+    "items": [
+      {
+        "id": "contact-homepage",
+        "label": "학교 홈페이지",
+        "value": "dankook.sen.hs.kr",
+        "href": "http://dankook.sen.hs.kr",
+        "caption": "학교 공식 안내",
+        "visible": true,
+        "footerVisible": true
+      },
+      {
+        "id": "contact-phone",
+        "label": "대표 전화",
+        "value": "02-2116-0115",
+        "href": "tel:0221160115",
+        "caption": "학교 대표 번호",
+        "visible": true,
+        "footerVisible": false
+      },
+      {
+        "id": "contact-instagram",
+        "label": "Instagram",
+        "value": "",
+        "href": "",
+        "caption": "운영 계정을 연결하면 푸터와 연결 섹션에 함께 표시됩니다.",
+        "visible": false,
+        "footerVisible": true
+      }
+    ]
+  },
+  "footer": {
+    "pagesLabel": "Pages",
+    "connectLabel": "Connect",
+    "accessLabel": "Access",
+    "pages": [
+      {
+        "label": "소개",
+        "target": "about"
+      },
+      {
+        "label": "부서",
+        "target": "departments"
+      },
+      {
+        "label": "프로젝트",
+        "target": "projects"
+      },
+      {
+        "label": "부원",
+        "target": "team"
+      },
+      {
+        "label": "갤러리",
+        "target": "gallery"
+      },
+      {
+        "label": "공지",
+        "target": "notices"
+      }
+    ]
+  },
+  "admin": {
+    "github": {
+      "owner": "",
+      "repo": "",
+      "branch": "main",
+      "contentPath": "data/site-content.json",
+      "galleryDir": "assets/gallery"
+    }
+  }
+}
