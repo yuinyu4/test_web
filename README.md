@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # remnant @ DKSH — 포트폴리오 웹사이트
 
 > 단국대학교부속소프트웨어고등학교 remnant 동아리 공식 포트폴리오
@@ -124,7 +123,3 @@ const ADMIN_PW = 'remnant2024'; // ← 여기 변경
 - **localStorage**: 관리자 데이터 영속성
 
 **remnant @ DKSH** | Turning fragments into futures ✦
-=======
-"# official_club" 
->>>>>>> 409d111952155b945713f9290d4e8348dfea1736
-"# test_web" 
